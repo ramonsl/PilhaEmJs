@@ -15,8 +15,11 @@ class MyStack {
     }
     popStack(){
         if(!this.isEmpty()){
+          
+            var x= this.pilha[this.topo];
             this.topo--;
-            return true;
+            return x;
+          
         }else{
             return false;
         } 
