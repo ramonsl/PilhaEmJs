@@ -40,8 +40,10 @@ class MyStack {
     }
     lista(){
         for(var i=0;i<=this.topo;i++){ 
-            var c = new Box(this.pilha[i].getId(),this.pilha[i].getPeso());
-            c.mostra();
+            var b = this.pilha[i];
+        //    var c = new Box(this.pilha[i].getId(),this.pilha[i].getPeso());
+            //console.log("achei:"+b);
+            b.mostra();
         }
     }
     getSize(){
